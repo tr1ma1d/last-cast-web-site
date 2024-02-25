@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoteBook</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="title">
+        <h1>ГЛАВА 1</h1>
+    </div>
+
+    <div class="cont-text">
+
+        <ul>
+            <li>
+                <p class="cont__text">
+                    CLR (common lang-s runtime) - Общеязыковая среда выполнения. Проходит для разных ЯП.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Метаданные - набор табл. данных описывает(к примеру типы и их члены)
+                </p>
+            </li>
+            <li>
+                <p>
+                    IL - язык машины. Для машины это может быть ООП
+                </p>
+            </li>
+            <li>
+                <p>
+                    Манифест - обычный набор таблиц метаданных.(PE32(+))
+                </p>
+            </li>
+            <li>
+                <p>
+                    Есть управляемые(безопасные) приложения. И неуправляемые(небезопасные(выбираем один контекст x86 or
+                    x64))
+                </p>
+            </li>
+            <li>
+                <p>
+                    JIT - JustInTime(компилятор подругому) обрабатывает код из c#, basic в машинный (IL).(выполняет
+                    методы
+                    :D)
+                    Также в тем есть optimize && debug. Таким образом можно сделать оптимизированное приложение.
+                </p>
+            </li>
+            <li>
+                <p>
+                    NGen - это сделать так, чтобы загрузка была быстрее
+                </p>
+            </li>
+            <li>
+                <p>
+                    Верификация - утверждение, что код является правильной и не выдает ошибку. Однако ее можно отключить
+                    и
+                    JIT нам не даст просто так такой запустить, мы должны написать System.Skip
+                </p>
+            </li>
+            <li>
+                <p>
+                    FCL(FrameworkClassLibrary) - набор сборок в формате DLL, в котором содержится несколько тыс.
+                    определений
+                    типов. Все это вызывается System
+                </p>
+            </li>
+
+            <li>
+                <p>CTS - серификация. Тип может содержать нуль и более членов. Также описания (Методы, сво-ва и тд
+                    Описание
+                    способов и поведения типоы)</p>
+            </li>
+            <li>
+                <p>CLS - минимальный набор возможностей для CLR/CTS(чтобы яп контактировали)</p>
+            </li>
+
+        </ul>
+
+
+    </div>
+</body>
+
+</html>
