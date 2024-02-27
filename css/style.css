@@ -5,6 +5,15 @@
     padding: 0;
     margin: 0;
 }
+:root{
+    --color-dialog: #D9D9D9;
+}
+.yellow{
+    color: hsl(43, 79%, 50%);
+}
+.green{
+    color: #0D9276;
+}
 /* binding */
 :root{
     --black-color-text: black; 
@@ -93,3 +102,73 @@
 
 
 /* main */
+.main-wrapper{
+    margin: 55px 20%;
+    justify-content: center;
+    display: flex;
+}
+.about-containter{
+    
+}
+.title__text_about{
+    text-align: center;
+    font: 400 46px/36px 'Roboto', 'sans-serif';
+    margin-bottom: 10px;
+}
+.about-container_inside{
+    border: solid 3.5px black;
+    width: 800px;
+    height: 600px;
+    display: flex; 
+    align-items: center;
+    flex-wrap: wrap;
+}
+.about-title__text{
+    font: 400 36px/36px 'Roboto', sans-serif;
+    margin: 10px 25px 0px;
+    text-align: center;
+}
+
+.about-info{
+    height: 150px;
+    margin: 20px 170px;
+    display: inline-block;
+}
+
+.nikita_image{
+    width: 150px;
+ 
+}
+.nikita-info{
+    display: flex;
+    
+}
+.about-info_talking{
+    margin: 0 10px;
+    width: 250px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    background-color: var(--color-dialog);
+    border-radius: 15.5px;
+}
+.about-info__text{
+    font: 300 16px/18px 'Inter', sans-serif;
+    text-align: justify;
+    width: 250px;
+    margin: auto 0;
+    margin: 0 20px;
+}
+.roman-info{
+    display: flex;
+    justify-content: end;
+}
+.roman-info_talking{
+    display: flex;
+    justify-content: end;
+    width: 250px;
+}
+.roman{
+    width: 135.5px;
+    text-align: end;
+}
