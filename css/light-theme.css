@@ -4,3 +4,34 @@
     --border-color_black: black;
     --container-color: rgb(187, 187, 187);
 }
+.about-container_inside{
+    border: solid 3.5px black;
+}
+.title__text_about{
+    color: black;
+}
+.top-menu__link{
+    color: black;
+}
+.about-title__text{
+    color: black;
+}
+
+.top-menu__link,
+.top-social__link{
+    color: black;
+}
+.top-social__link::after,
+.top-menu__link::after{
+   
+    background-color: black;
+  
+
+}
+.top-social__link:hover::after,
+.top-menu__link:hover::after{
+
+    background-color: black;
+  
+  
+}

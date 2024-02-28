@@ -1,5 +1,3 @@
-@import url("./dark-theme.css");
-@import url("./light-theme.css");
 
 *{
     padding: 0;
@@ -7,6 +5,7 @@
 }
 :root{
     --color-dialog: #D9D9D9;
+    --color-footer-text: #B8B8B8;
 }
 .yellow{
     color: hsl(43, 79%, 50%);
@@ -14,10 +13,7 @@
 .green{
     color: #0D9276;
 }
-/* binding */
-:root{
-    --black-color-text: black; 
-}
+
 /* top elements */
 .top-wrapper{
     display: flex;
@@ -40,11 +36,14 @@
     margin: 10px 2% 0;
    
 }
+.about-info{
+    color: black;
+}
 .top-social__link,
 .top-menu__link{
     text-decoration: none;
     position: relative;
-    color: var(--black-color-text);
+    
     margin: 0 5px;
     background-repeat: no-repeat;
     
@@ -53,7 +52,7 @@
 .top-social__link::after,
 .top-menu__link::after{
     content: '';
-    background-color: black;
+   
     position: absolute;
     transition: width 0.3s, transform 0.3s;
     transform: scaleX(0);
@@ -65,7 +64,7 @@
 .top-social__link:hover::after,
 .top-menu__link:hover::after{
     width: 100%;
-    background-color: black;
+
     transform: scaleX(1);
   
 }
@@ -78,19 +77,37 @@
     
     height: 50px;
 }
-.top-option__switchMode{
-    background-color: var(--border-color_black);
-    border: none;
-    border-radius: 50%;
-    width: 25px;
-    height: 25px;
-    transition: background-color 2s;
-    display: inline-block;
+.top-option_switch-mode{
+    width: 40px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: black;
+    cursor: pointer;
+    position: relative;
+    transition: 0.2s;
+}
 
+.top-option_switch-mode::before{
+    background-color: white;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 4px;
+    position: absolute;
+    content: '';
+    transition: 0.2s;
     
 }
-.top-option__switchMode:hover{
-    background-color: rgb(88, 88, 88);
+input:checked + .top-option_switch-mode{
+    background-color: white;
+
+}
+input:checked + .top-option_switch-mode::before{
+    background-color: black;
+    transform: translateX(20px);
+}
+#light-night_theme{
+    display: none;
 }
 
 #user-image{
@@ -107,16 +124,14 @@
     justify-content: center;
     display: flex;
 }
-.about-containter{
-    
-}
+
 .title__text_about{
     text-align: center;
     font: 400 46px/36px 'Roboto', 'sans-serif';
     margin-bottom: 10px;
 }
 .about-container_inside{
-    border: solid 3.5px black;
+    
     width: 800px;
     height: 600px;
     display: flex; 
@@ -157,7 +172,7 @@
     text-align: justify;
     width: 250px;
     margin: auto 0;
-    margin: 0 20px;
+   
 }
 .roman-info{
     display: flex;
@@ -166,9 +181,103 @@
 .roman-info_talking{
     display: flex;
     justify-content: end;
-    width: 250px;
+    width: 200px;
+    padding: 25px;
 }
 .roman{
-    width: 135.5px;
+    width: 135px;
     text-align: end;
+}
+
+
+
+
+.link-wrapper{
+    background-image: url("../images/Cyan.png");
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 150px 0;
+}
+.link-container_black{
+    background-color: rgba(0, 0, 0, 0.735);
+    width: 800px;
+    height: 400px;
+    padding: 40px;
+}
+.link-container__title{
+    color:white;
+    font: 600 64px/64px 'Roboto', sans-serif;
+    width: 400px;
+    margin: 0 auto; 
+    text-align: center;
+}
+.discord__title{
+    text-align: start;
+}
+.telegram__title{
+    text-align: end;
+}
+.link__button_container{
+    margin-top: 90px;
+}
+.link__button{
+    width: 300px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    text-align: center;
+    margin: 20px auto;
+    cursor:pointer;
+    transition: 0.3s;
+}
+
+.discord_link{
+    background-color: #9F11D0;
+}
+.discord_link:hover{
+    background-color: #760e98;
+}
+.telegram_link{
+    background-color: #15BCD2;
+}
+.telegram_link:hover{
+    background-color: #13a2b5;
+}
+.discord_link > a,
+.telegram_link> a{
+    text-decoration: none;
+    color: white;
+    font: 400 18px/16px 'Inter', sans-serif; 
+}
+
+
+/* footer */
+
+.bottom{
+    background-color: #D9D9D9;
+    height: 200px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.bottom-container{
+    display:flex;
+    justify-content: start;
+    align-items: end;
+    margin: 5px;
+    font: 300 14px/12px 'Inter', sans-serif;
+    color: var(--color-footer-text);
+}
+.column-second{
+    justify-content: end;
+    text-align: end;
+}
+.bottom__link > img{
+    height: 15px;
+}
+.bottom-info{
+    margin: 5px;
 }

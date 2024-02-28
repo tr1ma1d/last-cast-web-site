@@ -5,3 +5,40 @@
     --border-color: #B6BBC4;
     --container-color: #31304D;
 }
+header{
+    color: white;
+}
+body{
+    background-color: black;
+}
+.about-container_inside{
+    border:solid 3.5px white;
+}
+.title__text_about{
+    color: white;
+}
+.top-menu__link{
+    color: white;
+}
+.about-title__text{
+    color: white;
+}
+
+.top-menu__link,
+.top-social__link{
+    color: white;
+}
+.top-social__link::after,
+.top-menu__link::after{
+   
+    background-color: white;
+  
+
+}
+.top-social__link:hover::after,
+.top-menu__link:hover::after{
+
+    background-color: white;
+  
+  
+}
